@@ -14,10 +14,10 @@ def areaofcircle(radius):
         return math.pi * radius * radius
 
 
-def firstlastlist(list):
-    if(type(list) is not list):
+def firstlastlist(enterdlist):
+    if(type(enterdlist) is not list):
         return "Enter a list."
-    elif(list == []):
+    elif(enterdlist == []):
         return "Enter a list that isn't empty"
     else:
-        return [list[0], list[-1]]
+        return [enterdlist[0], enterdlist[-1]]
