@@ -25,5 +25,6 @@ class TestCase(unittest.TestCase):
         expected = math.pi * 100
         self.assertEqual(expected, task.areaofcircle(10))
 
+
 if __name__ == '__main__':
     unittest.main()

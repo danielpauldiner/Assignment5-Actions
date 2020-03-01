@@ -4,6 +4,7 @@ import math
 def firstrun():
     return "success"
 
+
 def areaofcircle(radius):
     if(type(radius) is not (int or float)):
         return "Enter a float or int for the radius."
