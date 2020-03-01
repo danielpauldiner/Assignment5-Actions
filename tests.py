@@ -7,6 +7,7 @@ class TestCase(unittest.TestCase):
         expected = "success"
         self.assertEqual(expected, task.firstrun())
 
+
     def test2(self):
         expected = "failure"
         self.assertNotEqual(expected, task.firstrun())
