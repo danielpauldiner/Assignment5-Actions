@@ -25,6 +25,18 @@ class TestCase(unittest.TestCase):
         expected = math.pi * 100
         self.assertEqual(expected, task.areaofcircle(10))
 
+    def testfirstlast1(self):
+        expected = "Enter a list."
+        self.assertEqual(expected, task.firstlastlist("test"))
+
+    def testfirstlast2(self):
+        expected = "Enter a list that isn't empty"
+        self.assertEqual(expected, task.firstlastlist([]))
+
+    def testfirstlast3(self):
+        expected = [2, 8]
+        self.assertEqual(expected, task.firstlastlist([2, 4, 6, 8]))
+
 
 if __name__ == '__main__':
     unittest.main()

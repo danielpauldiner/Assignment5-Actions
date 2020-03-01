@@ -12,3 +12,12 @@ def areaofcircle(radius):
         return "Enter a positive number for the radius."
     else:
         return math.pi * radius * radius
+
+
+def firstlastlist(list):
+    if(type(list) is not list):
+        return "Enter a list."
+    elif(list == []):
+        return "Enter a list that isn't empty"
+    else:
+        return [list[0], list[-1]]
