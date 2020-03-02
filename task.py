@@ -1,4 +1,5 @@
 import math
+import datetime
 
 
 def firstrun():
@@ -21,3 +22,10 @@ def firstlastlist(enterdlist):
         return "Enter a list that isn't empty"
     else:
         return [enterdlist[0], enterdlist[-1]]
+
+
+def calcdates(date1, date2):
+    if(type(date1) is not datetime.date or type(date2) is not datetime.date):
+        return "Enter dates into the function."
+    else:
+        return abs(date1 - date2).days

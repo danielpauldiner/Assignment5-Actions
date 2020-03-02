@@ -1,6 +1,7 @@
 import unittest
 import task
 import math
+import datetime
 
 
 class TestCase(unittest.TestCase):
@@ -36,6 +37,14 @@ class TestCase(unittest.TestCase):
     def testfirstlast3(self):
         expected = [2, 8]
         self.assertEqual(expected, task.firstlastlist([2, 4, 6, 8]))
+
+    def testcalcdate1(self):
+        expected = "Enter dates into the function."
+        self.assertEqual(expected, task.calcdates("june", "july"))
+
+    def testcalcdate2(self):
+        expected = 29
+        self.assertEqual(expected, task.calcdates(datetime.date(2020, 3, 1),datetime.date(2020, 2, 1)))
 
 
 if __name__ == '__main__':
