@@ -44,7 +44,7 @@ class TestCase(unittest.TestCase):
 
     def testcalcdate2(self):
         expected = 29
-        self.assertEqual(expected, task.calcdates(datetime.date(2020, 3, 1),datetime.date(2020, 2, 1)))
+        self.assertEqual(expected, task.calcdates(datetime.date(2020, 3, 1), datetime.date(2020, 2, 1)))
 
 
 if __name__ == '__main__':
